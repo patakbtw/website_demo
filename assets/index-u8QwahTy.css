@@ -182,31 +182,30 @@ label {
 }
 
 @media (max-width: 767px) {
+  .upcoming {
+    height: fit-content;
+    padding-bottom: 40px;
+  }
   .upcoming__header {
     font-size: 2em;
     letter-spacing: 5px;
+    text-align: center;
   }
-
-  .upcoming__item {
-    font-size: 1em;
+  .upcoming__wrapper {
+    justify-content: center;
   }
-}
-
-@media (max-width: 424px) {
-  .upcoming__header {
-    font-size: 2em;
-    letter-spacing: 5px;
+  .upcoming__triangle {
+    display: none;
   }
-
   .upcoming__list {
-    width: 70%;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
   }
-
   .upcoming__item {
-    font-size: 0.6em;
+    width: 100%;
   }
 }
-
 .description {
   height: 100vh;
   display: flex;
